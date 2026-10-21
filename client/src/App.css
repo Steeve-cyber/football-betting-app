@@ -108,6 +108,13 @@ input {
   justify-content: space-between;
   gap: 18px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
 }
 
 .match-left {
@@ -147,6 +154,23 @@ input {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.team-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.team:hover .team-logo,
+.mini-team:hover .team-logo {
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 10px rgba(56, 189, 248, 0.3));
 }
 
 .team-badge,
@@ -229,7 +253,10 @@ input {
   gap: 3px;
   cursor: pointer;
   font-weight: 800;
-  transition: all 0.2s ease;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
 }
 
 .odd-btn span {
@@ -243,6 +270,7 @@ input {
   border-color: rgba(56, 189, 248, 1);
   color: #071920;
   box-shadow: 0 10px 18px rgba(56, 189, 248, 0.2);
+  transform: translateY(-1px);
 }
 
 .odd-btn:hover span,
@@ -279,6 +307,7 @@ input {
   border-radius: 10px;
   padding: 10px 10px 12px;
   margin-bottom: 12px;
+  transition: border-color 0.2s ease;
 }
 
 .mini-match:last-child {
@@ -293,16 +322,20 @@ input {
 
 .mini-teams {
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
 }
 
-.mini-teams {
+.mini-team {
   display: flex;
-  align-items: left;
-  justify-content: flex-start; /* Aligne les équipes proprement à gauche avec un espacement maîtrisé */
-  gap: 50px; /* Espace naturel et harmonieux entre l'équipe domicile, le VS et l'équipe extérieur */
-  margin-bottom: 25px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+  color: var(--text);
+  font-size: 0.94rem;
+  font-weight: 700;
 }
 
 .mini-team span:last-child {
@@ -312,18 +345,17 @@ input {
 }
 
 .mini-vs {
-  color: #8a9ba8;
-  font-size: 0.85rem;
-  font-weight: bold;
-  margin: 0px 40px;
+  font-size: 0.7rem;
+  color: #9fb4cc;
+  flex-shrink: 0;
 }
 
 .mini-odds {
   display: flex;
   justify-content: center;
-  gap: 156px;
+  gap: 6px;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 .mini-odd {
@@ -339,6 +371,9 @@ input {
   justify-content: center;
   gap: 2px;
   cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background-color 0.18s ease;
 }
 
 .mini-odd span {
@@ -350,6 +385,7 @@ input {
   background: linear-gradient(180deg, #38bdf8, #0ea5e9);
   color: #071920;
   border-color: rgba(56, 189, 248, 1);
+  transform: translateY(-1px);
 }
 
 .mini-odd:hover span {
@@ -365,6 +401,14 @@ input {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px 14px 16px;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.bet-slip:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
 }
 
 .bet-slip h2 {
@@ -382,12 +426,13 @@ input {
 }
 
 .bet-item {
-  background: rgba(11, 17, 32, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: linear-gradient(180deg, #0b1120, #101b2d);
   border-radius: 10px;
   padding: 12px 14px;
   margin-bottom: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
   position: relative;
+  animation: fadeInUp 0.25s ease;
 }
 
 .bet-item-header {
@@ -440,11 +485,21 @@ input {
   width: 84px;
   background: rgba(11, 17, 32, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 8px;
+  color: #fff;
   padding: 7px 10px;
+  border-radius: 8px;
   text-align: right;
-  color: white;
+  font-size: 0.95rem;
   font-weight: 700;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stake-input-group input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
 }
 
 .potential-win {
@@ -467,11 +522,17 @@ input {
   color: #06131f;
   font-weight: 900;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 8px 16px rgba(56, 189, 248, 0.18);
 }
 
 .place-bet-btn:hover {
+  transform: translateY(-1px);
   opacity: 0.95;
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.22);
 }
 
 .success-msg {
@@ -479,6 +540,29 @@ input {
   text-align: center;
   font-weight: 800;
   padding: 18px 10px;
+  animation: popIn 0.25s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 900px) {
@@ -514,31 +598,4 @@ input {
     flex: 1;
     width: auto;
   }
-}
-.team {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.mini-team {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.team-logo {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.mini-logo {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  object-fit: contain;
-  flex-shrink: 0;
 }
