@@ -1,1 +1,1 @@
-const PORT = process.env.PORT || 5000;
+// Vite entry point is main.jsx; this file is not used by the application.
