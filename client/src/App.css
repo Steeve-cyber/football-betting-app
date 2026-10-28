@@ -24,6 +24,10 @@
   height: 28px;
   flex: 0 0 28px;
   object-fit: contain;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #f0f1e9;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .3));
 }
 @media (max-width: 680px) {
