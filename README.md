@@ -44,3 +44,9 @@ Les compétitions indisponibles chez le fournisseur restent visibles en mode dé
 - client/src/demo.js : données de démonstration reproductibles.
 - client/src/App.css et client/src/extra.css : identité visuelle, responsive et animations.
 - server/server.js : API de cotes et cache.
+
+## Écussons des clubs anglais
+
+Les blasons locaux de Premier League sont servis depuis client/public/logos afin qu’ils restent visibles sans accès réseau. Les fichiers sont issus des URL de blason utilisées par football-data.org; les marques appartiennent à leurs clubs respectifs et sont affichées pour identifier les équipes.
+
+Source du format des écussons et identifiants d’équipe : https://docs.football-data.org/general/v4/team.html
