@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { genererDemo } from "./demo";
+import { getClubLogo } from "./clubLogos";
 import "./App.css";
 
 const LEAGUES = [
@@ -50,39 +51,8 @@ function Emblem({ small = false }) {
     <path d="M14 30H8v3a8 8 0 0 0 8 8m26-11h6v3a8 8 0 0 1-8 8" fill="none" stroke="url(#emblem-gold)" strokeWidth="2.5" strokeLinecap="round"/>
   </svg></span>;
 }
-const CLUB_LOGOS = {
-  "arsenal": "/logos/arsenal.png",
-  "arsenal fc": "/logos/arsenal.png",
-  "aston villa": "/logos/aston-villa.png",
-  "aston villa fc": "/logos/aston-villa.png",
-  "brighton": "/logos/brighton.png",
-  "brighton and hove albion": "/logos/brighton.png",
-  "brighton & hove albion": "/logos/brighton.png",
-  "brentford": "/logos/brentford.png",
-  "brentford fc": "/logos/brentford.png",
-  "chelsea": "/logos/chelsea.png",
-  "chelsea fc": "/logos/chelsea.png",
-  "everton": "/logos/everton.png",
-  "everton fc": "/logos/everton.png",
-  "liverpool": "/logos/liverpool.png",
-  "liverpool fc": "/logos/liverpool.png",
-  "manchester city": "/logos/manchester-city.png",
-  "manchester city fc": "/logos/manchester-city.png",
-  "man city": "/logos/manchester-city.png",
-  "manchester united": "/logos/manchester-united.png",
-  "manchester united fc": "/logos/manchester-united.png",
-  "man utd": "/logos/manchester-united.png",
-  "newcastle united": "/logos/newcastle-united.png",
-  "newcastle united fc": "/logos/newcastle-united.png",
-  "newcastle": "/logos/newcastle-united.png",
-  "tottenham hotspur": "/logos/tottenham-hotspur.png",
-  "tottenham hotspur fc": "/logos/tottenham-hotspur.png",
-  "tottenham": "/logos/tottenham-hotspur.png",
-  "west ham united": "/logos/west-ham-united.png",
-  "west ham": "/logos/west-ham-united.png",
-};
 function ClubMark({ name }) {
-  const logo = CLUB_LOGOS[name.trim().toLocaleLowerCase("en")];
+  const logo = getClubLogo(name);
   if (logo) return <img className="club-logo" src={logo} alt="" aria-hidden="true" loading="lazy" decoding="async" />;
   const color = [...name].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) % 360, 0);
   return <span className="club-mark" style={{ "--club-hue": color }} aria-hidden="true">{initials(name)}</span>;
