@@ -50,3 +50,7 @@ Les compétitions indisponibles chez le fournisseur restent visibles en mode dé
 Les blasons locaux de Premier League sont servis depuis client/public/logos afin qu’ils restent visibles sans accès réseau. Les fichiers sont issus des URL de blason utilisées par football-data.org; les marques appartiennent à leurs clubs respectifs et sont affichées pour identifier les équipes.
 
 Source du format des écussons et identifiants d’équipe : https://docs.football-data.org/general/v4/team.html
+## 🚀 Démo en ligne
+Vous pouvez tester l'application en direct ici : [https://football-betting-app-three.vercel.app/]
+
+> **Note technique :** L'application s'appuie en local sur un serveur proxy (Dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section Installation locale.
