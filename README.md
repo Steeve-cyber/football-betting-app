@@ -2,7 +2,7 @@
 
 | Écran principal (Cotes & Matchs) | Panier / Paris sélectionnés |
 | :---: | :---: |
-| <img width="100%" src="https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8" alt="Écran principal" /> | <img width="100%" src="METS_ICI_L_URL_GITHUB_DE_TON_DEUXIEME_ECRAN" alt="Panier" /> |
+| ![Écran principal](https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8) | ![Panier](https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8) |
 
 ## 🚀 Note sur le déploiement & Mode Démo
 
