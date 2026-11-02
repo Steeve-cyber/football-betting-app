@@ -9,30 +9,6 @@
 
 > **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
 
-## 🚀 Note sur le déploiement & Mode Démo
-
-> **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
-
-## 🚀 Note sur le déploiement & Mode Démo
-
-> **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
-
-</div>
-
----
-
-## 📸 Aperçu
-
-| Écran principal (Cotes & Matchs) | Panier / Paris sélectionnés |
-| :---: | :---: |
-| <img width="100%" src="https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8" alt="Écran principal" /> | <img width="100%" src="https://github.com/user-attachments/assets/..." alt="Panier" /> |
-
-## 🚀 Note sur le déploiement & Mode Démo
-
-> **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
-
-
-
 </div>
 
 </div>
@@ -54,19 +30,11 @@ Le coupon est une simulation locale et ne transmet aucune mise. Les données de 
 
 ## Démarrer
 
-Prérequis : Node.js 18 ou supérieur.
+## 📋 Prérequis
 
-Terminal 1, depuis le dossier server :
-
-    npm install
-    npm start
-
-Terminal 2, depuis le dossier client :
-
-    npm install
-    npm run dev
-
-Ouvrez l’adresse locale affichée par Vite. Si le serveur API ou sa clé n’est pas configuré, l’application affiche les rencontres simulées.
+Assure-toi d'avoir installé les éléments suivants sur ta machine :
+* **Node.js** : `>= 20.x` (Recommandé : version LTS 20 ou supérieure)
+* **npm** : `>= 9.x`
 
 ## Cotes fournisseur facultatives
 
