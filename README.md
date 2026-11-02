@@ -8,6 +8,10 @@
 
 > **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
 
+## 🚀 Note sur le déploiement & Mode Démo
+
+> **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
+
 </div>
 
 ---
