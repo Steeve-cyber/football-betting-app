@@ -2,7 +2,7 @@
 
 | Écran principal (Cotes & Matchs) | Panier / Paris sélectionnés |
 | :---: | :---: |
-| ![Écran principal](https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8) | ![Panier](https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8) |
+| ![Écran principal](file:///C:/Users/franc/Downloads/3.png) | ![Panier](file:///C:/Users/franc/Downloads/3.png) |
 
 ## 🚀 Note sur le déploiement & Mode Démo
 
