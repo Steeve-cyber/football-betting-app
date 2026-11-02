@@ -1,4 +1,34 @@
-# BET-APP FOOT
+# ⚽ Football Betting App
+
+<div align="center">
+
+[![Démo en ligne](https://img.shields.io/badge/%F0%9F%99%80_Acc%C3%A9der_%C3%A0_la_d%C3%A9mo-Vercel-brightgreen?style=for-the-badge)](https://football-betting-app-three.vercel.app/)
+[![Licence](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Node Version](https://img.shields.io/badge/Node.js-%3E%3D20.x-orange?style=for-the-badge)](https://nodejs.org/)
+
+*Une application web moderne de simulation de paris sportifs de football, conçue avec React (Vite) et Node.js.*
+
+</div>
+
+---
+
+## 📸 Aperçu
+
+| Écran principal (Cotes & Matchs) | Panier / Paris sélectionnés |
+| :---: | :---: |
+| <img width="100%" src="https://github.com/user-attachments/assets/62307e7d-5b43-4b74-a0c3-dfee7c5db1a8" alt="Écran principal" /> | <img width="100%" src="https://github.com/user-attachments/assets/..." alt="Panier" /> |
+
+## 🚀 Note sur le déploiement & Mode Démo
+
+> **Note technique :** L'application s'appuie en local sur un serveur proxy (dossier `server/`) pour interroger l'API de football en toute sécurité. Sur le déploiement statique Vercel, l'application bascule automatiquement en **mode démonstration** avec des données de test. Pour profiter de l'application connectée en temps réel avec la vraie API, suivez les instructions de la section d'installation locale.
+
+
+
+</div>
+
+</div>
+
+---
 
 Interface portfolio de comparaison de marchés football, construite avec React et Vite. Elle propose un mode démonstration utilisable sans compte fournisseur et une connexion API facultative.
 
