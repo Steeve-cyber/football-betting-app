@@ -4,7 +4,7 @@ Interface portfolio de comparaison de marchés football, construite avec React e
 
 ## Fonctions
 
-- 14 compétitions et 168 clubs au catalogue démo, répartis en Europe, Amérique du Nord, Amérique du Sud et Australie.
+- 14 compétitions, 168 entrées d’équipes et 156 clubs distincts au catalogue démo, répartis en Europe, Amérique du Nord, Amérique du Sud et Australie.
 - Fixtures et marchés simulés localement par défaut.
 - Filtre par date, recherche de club, favoris persistants sur cet appareil et repérage des meilleures offres.
 - Coupon combiné avec calcul de cote, retour potentiel et gain estimé.
@@ -45,8 +45,10 @@ Les compétitions indisponibles chez le fournisseur restent visibles en mode dé
 - client/src/App.css et client/src/extra.css : identité visuelle, responsive et animations.
 - server/server.js : API de cotes et cache.
 
-## Écussons des clubs anglais
+## Écussons des clubs
 
-Les blasons locaux de Premier League sont servis depuis client/public/logos afin qu’ils restent visibles sans accès réseau. Les fichiers sont issus des URL de blason utilisées par football-data.org; les marques appartiennent à leurs clubs respectifs et sont affichées pour identifier les équipes.
+Les blasons des 156 clubs distincts du catalogue démo sont enregistrés dans client/public/logos et servis localement, sans dépendance à un chargement externe à l’affichage. La correspondance des noms gère les accents et les variantes courantes entre compétitions.
 
-Source du format des écussons et identifiants d’équipe : https://docs.football-data.org/general/v4/team.html
+Les fichiers viennent des ressources d’équipes de football-data.org pour la Premier League, des images d’équipes publiées par ESPN pour les clubs actuels et du dépôt football-badges pour certains clubs historiques. Le logo Western United provient de la page officielle du club. Les marques et écussons appartiennent à leurs détenteurs respectifs et sont utilisés pour identifier les équipes.
+
+Sources : [football-data.org](https://docs.football-data.org/general/v4/team.html), [ESPN Soccer](https://site.api.espn.com/apis/site/v2/sports/soccer/), [football-badges](https://github.com/leoratzlaff/football-badges), [Western United](https://wufc.com.au/news/western-united-fc-unveil-new-logo/).
